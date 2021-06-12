@@ -75,8 +75,7 @@ h2 {
 
 .card {
     background-color: hsl(244, 38%, 16%);
-    max-width: 80%;
-    min-width: 80%;
+    max-width: 1220px;
     border-radius: 10px;
     display: flex;
     
@@ -90,13 +89,20 @@ h2 {
     box-sizing: border-box;
     padding: 3em;
     width: 50%;
-
 }
 
 .cont-img {
     width: 50%;
     border-radius: 0 10px 10px 0;
     background-color: hsl(277, 64%, 61%);
+}
+
+.img {
+    /* opacity: 0.75; */
+    height: 100%;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    mix-blend-mode: multiply;
 }
 
 .stats {
@@ -120,15 +126,79 @@ h2 {
     margin-top: 1em;
 }
 
-.img {
-    /* opacity: 0.75; */
-    height: 100%;
-    width: 100%;
-    border-radius: 0 10px 10px 0;
-    mix-blend-mode: multiply;
-}
-
 .mobile-img {
     display: none;
 }
 
+@media (max-width: 575.98px) { 
+
+    h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .info p {
+        text-align: center;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 90%;
+    }
+
+    .cont-img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding: 1.8em;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .cont-img, .img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .stats span {
+        margin-top: 1.8em;
+    }
+
+    .number {
+        font-size: 1.7em;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
