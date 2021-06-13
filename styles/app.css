@@ -76,9 +76,9 @@ h2 {
 .card {
     background-color: hsl(244, 38%, 16%);
     max-width: 1220px;
+    width: 80%;
     border-radius: 10px;
     display: flex;
-    
 }
 
 .standout {
@@ -130,23 +130,52 @@ h2 {
     display: none;
 }
 
-@media (max-width: 575.98px) { 
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .card {
+        width: 90%;
+    }
 
     h2 {
+        font-size: 1.5em;
+    }
+
+    .info p {
+        font-size: 0.8em;
+    }
+
+    .number {
+        font-size: 1em;
+    }
+
+    .category {
+        font-size: 0.8em;
+    }
+
+    .stats {
+        padding-right: 1em;
+        margin-top: 1.75em;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    h2 {
         text-align: center;
-        font-size: 1.8em;
+        font-size: 2.2em;
     }
 
     .info p {
         text-align: center;
         padding: 0;
-        font-size: 1.2em;
+        font-size: 1.5em;
+        margin-top: 1.5em;
     }
 
     .card {
         flex-direction: column-reverse;
         align-items: center;
-        width: 90%;
+        width: 80%;
     }
 
     .cont-img {
@@ -175,30 +204,50 @@ h2 {
         align-items: center;
         padding: 0;
         text-align: center;
-        margin-top: 1em;
+        margin-top:1em;
     }
 
     .stats span {
-        margin-top: 1.8em;
+        margin-top: 1.5em;
     }
 
     .number {
         font-size: 1.7em;
     }
 
+    .category {
+        font-size: 1.2em;
+    }
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) { 
 
-}
+    h2 {
+        font-size: 1.7em;
+    }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+    .info p {
+        font-size: 0.95em;
+    }
 
-}
+    .info {
+        padding: 1.8em;
+    }
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+    .stats {
+        margin-top: 1em;
+    }
+
+    .stats span {
+        margin-top: 1.5em;
+    }
+
+    .number {
+        font-size: 1.2em;
+    }
+
+    .category {
+        font-size: 0.7em;
+    }
 
 }
